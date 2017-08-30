@@ -1,6 +1,6 @@
 (function() {
     function HomeCtrl(Room) {
-      this.roomDisplay = Room.all;
+      this.chatRooms = Room.all;
       console.log(Room.all);
     }
 
