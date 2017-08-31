@@ -6,6 +6,17 @@
 
     Room.all = rooms;
 
+    Room.createRoomObject = function() {
+
+        var room = { name: 'test'};
+        return room;
+
+    }
+
+    Room.add = function(room) {
+        rooms.$add({ name: 'test' })
+    }
+
     return Room;
   }
 
