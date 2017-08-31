@@ -14,7 +14,7 @@
     }
 
     Room.add = function(room) {
-        rooms.$add({ name: 'test' })
+        Room.$add({ room })
     }
 
     return Room;
