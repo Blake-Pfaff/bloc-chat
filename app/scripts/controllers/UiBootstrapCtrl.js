@@ -1,11 +1,14 @@
 (function() {
 
     function UiBootstrapCtrl($uibModal) {
-
-        var modalInstance = $uibModal.open({});
-
+      this.open = function() {
+        $uibModal.open({
+          template: "<h1>Create A New Room</h1> <input type=text></input>"
+        })
+      }
 
     }
+
 
 
     angular
