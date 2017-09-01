@@ -8,17 +8,15 @@
 
     Room.createRoomObject = function() {
 
-        var room = { name: 'test'};
-        return room;
-
+        
     }
 
     Room.add = function(room) {
-        Room.$add({ room })
+
     }
 
     return Room;
-    
+
   }
 
   angular
