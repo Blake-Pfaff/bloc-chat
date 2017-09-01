@@ -6,11 +6,6 @@
 
     Room.all = rooms;
 
-    Room.createRoomObject = function() {
-
-        
-    }
-
     Room.add = function(room) {
 
     }

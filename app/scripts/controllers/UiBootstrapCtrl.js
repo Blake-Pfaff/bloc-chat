@@ -1,16 +1,17 @@
 (function() {
 
     function UiBootstrapCtrl($uibModal) {
-      this.alert = function() {
-       alert();
-    }
 
+        var modalInstance = $uibModal.open({});
+
+
+    }
 
 
     angular
         .module('blocChat')
         .controller('UiBootstrapCtrl', ['$uibModal', UiBootstrapCtrl]);
 
-    }
+
 
 })();
