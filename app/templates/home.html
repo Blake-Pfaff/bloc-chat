@@ -1,7 +1,17 @@
+
+
+
+
 <main>
+<div class="">
 
-  <h1>Bloc Chat</h1>
-  <button ng-click="UiBootstrapCtrl.alertTest()" class="btn btn-primary" type="button" name="button">Add a room</button>
+
+  <h1 >Bloc Chat</h1>
+
+
+  <button  ng-click="UiBootstrapCtrl.alert()" class="btn btn-primary" type="button" name="button">Add a room</button>
+
+
   <h3 ng-repeat="rooms in home.chatRooms">{{ rooms.$value }}</h3>
-
+</div>
 </main>
