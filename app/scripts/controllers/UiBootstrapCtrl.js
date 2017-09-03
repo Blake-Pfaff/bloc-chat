@@ -1,7 +1,8 @@
 (function() {
 
-  function UiBootstrapCtrl($uibModal) {
+  function UiBootstrapCtrl($uibModal, Room) {
     // Controller method to open the modal
+
     this.open = function () {
       // Trigger the modal window and assign it to a modal variable
       var modal = $uibModal.open({
@@ -9,18 +10,23 @@
         controller: 'ModalInstanceCtrl',
         controllerAs: 'modal'
       });
+      
 
-      // Handle the open/close of the modal
-      modal.result.then(function () {
-        console.log('opened!');
-      }, function () {
-        console.log('dismissed!');
-      });
+      modal.result.then(
+        // This is called when the modal is closed, i.e modal.close().
+        function (result) {
+          console.log('modal accepted and closed!', result);
+        },
+        // This is called when the modal is dismissed, i.e. modal.dismiss().
+        function () {
+          console.log('modal dismissed!');
+        }
+      );
     };
   }
 
   angular
     .module('blocChat')
-    .controller('UiBootstrapCtrl', ['$uibModal', UiBootstrapCtrl]);
+    .controller('UiBootstrapCtrl', ['$uibModal', 'Room', UiBootstrapCtrl]);
 
 })();
