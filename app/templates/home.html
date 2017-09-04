@@ -3,16 +3,14 @@
 
 
 <main>
-<div ng-controller="UiBootstrapCtrl as uib" class="">
-
+<div  class="">
 
   <h1 >Bloc Chat</h1>
 
+  <button ng-controller="UiBootstrapCtrl as uib" ng-click="uib.open()" class="btn btn-primary" type="button" name="button">Add a room</button>
 
-  <button ng-click="uib.open()" class="btn btn-primary" type="button" name="button">Add a room</button>
 
-
-  <h3 ng-repeat="rooms in home.chatRooms">{{ rooms.$value }}</h3>
+  <h3 ng-repeat="rooms in home.chatRooms">{{ rooms.name }}</h3>
 
 </div>
 </main>

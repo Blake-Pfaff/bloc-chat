@@ -10,11 +10,12 @@
         controller: 'ModalInstanceCtrl',
         controllerAs: 'modal'
       });
-      
+
 
       modal.result.then(
         // This is called when the modal is closed, i.e modal.close().
         function (result) {
+          Room.add(result);
           console.log('modal accepted and closed!', result);
         },
         // This is called when the modal is dismissed, i.e. modal.dismiss().
