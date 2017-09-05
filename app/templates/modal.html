@@ -1,7 +1,14 @@
-<h1>Creat a new room </h1>
-<h3>Enter a room name</h3>
 
-<input ng-model="roomName" type="text" name="" value="">
+
+
+<h2>Creat a new room </h1>
+<h3 class="modalH3">Enter a room name</h3>
+
+<div class="inputDiv">
+
+<input class="modalInput" ng-model="roomName" type="text" name="" value="">
 <br>
 <button ng:click="modal.submit(roomName)" class="btn btn-primary" type="button" name="button">create</button>
 <button ng:click="modal.cancel('cancel')" type="button" class="btn btn-secondary" name="button">cancel</button>
+
+</div>

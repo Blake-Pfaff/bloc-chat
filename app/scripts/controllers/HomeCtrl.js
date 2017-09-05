@@ -1,12 +1,12 @@
 (function() {
-    function HomeCtrl(Room, $scope) {
+    function HomeCtrl(Room) {
       this.chatRooms = Room.all;
       this.createRoom = Room.add;
-      var chatRooms = this.chatRooms
 
-      this.chatRooms.$loaded().then(function(){
-        $scope.currentRoom = chatRooms.$getRecord('-KtDNd_7Ph6y4sztODP-');
-        console.log($scope.currentRoom);
+
+      this.chatRooms.$loaded().then(() => {
+        this.currentRoom = this.chatRooms.$getRecord('-KtDNd_7Ph6y4sztODP-');
+        console.log(this.currentRoom);
       })
 
 
@@ -17,5 +17,5 @@
 
     angular
         .module('blocChat')
-        .controller('HomeCtrl', ['Room','$scope', '$uibModal', HomeCtrl]);
+        .controller('HomeCtrl', ['Room', '$uibModal', HomeCtrl]);
 })();
