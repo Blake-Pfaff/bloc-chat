@@ -15,6 +15,10 @@
       }
     }
 
+      this.alert = function() {
+        alert();
+      }
+
     angular
         .module('blocChat')
         .controller('HomeCtrl', ['Room', '$uibModal', HomeCtrl]);
