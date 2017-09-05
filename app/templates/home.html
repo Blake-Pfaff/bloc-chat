@@ -1,25 +1,30 @@
 
-
-
-
 <main>
-<div  class="">
+    <div class="row">
+      <div class="col-sm-12">
+        <!-- === Top Section === -->
+        <section class="top-section container">
+          <h1 >Bloc Chat</h1>
+          <div class="btnDiv">
+            <button ng-controller="UiBootstrapCtrl as uib" ng-click="uib.open()" class="btn btn-primary" type="button" name="button">Add a room</button>
+          </div>
+        </section>
+      </div>
+    </div>
 
-  <h1 >Bloc Chat</h1>
+    <hr>
 
-  <button ng-controller="UiBootstrapCtrl as uib" ng-click="uib.open()" class="btn btn-primary" type="button" name="button">Add a room</button>
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="" id="colOne">
+          <h3 ng-repeat="rooms in home.chatRooms">{{ rooms.name }}</h3>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="" id="colTwo">
+          <h3 >test</h3>
+        </div>
+      </div>
+    </div>
 
-
-
-
-  <h3 ng-repeat="rooms in home.chatRooms">{{ rooms.name }}</h3>
-
-
-
-
-  <h3 >{{ rooms.name }}</h3>
-
-
-
-</div>
 </main>

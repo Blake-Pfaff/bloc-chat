@@ -1,3 +1,26 @@
- h2, .modalH3, .inputDiv  {
+ h1, h2, .modalH3, .inputDiv, .btnDiv, #colOne, #colTwo  {
   text-align: center;
+}
+
+
+.divTest {
+  color: red;
+  display: flex;
+
+}
+
+#colOne {
+  background-color: gray;
+  border: solid 2px black;
+  height:500px;
+  padding: 1.5rem;
+
+}
+
+#colTwo {
+  background-color: lightblue;
+  border: solid 2px black;
+  height:500px;
+  padding: 1.5rem;
+
 }

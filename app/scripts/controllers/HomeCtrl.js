@@ -11,13 +11,16 @@
 
 
       this.changeRoom = function(room) {
-          $scope.currentRoom = room;
+          this.currentRoom = room;
       }
-    }
 
       this.alert = function() {
         alert();
       }
+
+
+    }
+
 
     angular
         .module('blocChat')
