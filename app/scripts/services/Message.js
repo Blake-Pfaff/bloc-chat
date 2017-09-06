@@ -1,16 +1,20 @@
 (function() {
   function Message($firebaseArray) {
+              // makes an empty ojbect 
     var Message = {};
-    var ref = firebase.database().ref().child("messages");
+            // var ref:  creates a refrence from the database made from the children of humans. j/k made from "Messages"
+    var ref = firebase.database().ref().child("Messages");
+            // takes ref & makes it an array from the children of "Messages"
     var messages = $firebaseArray(ref);
 
     Message.getByRoomId = function(roomId) {
-        messages.orderByChild(roomId);
+
+        ref.orderByChild('roomId').equalTo(roomId);
+
     };
 
     return Message;
-    };
-  
+  }
 
   angular
     .module('blocChat')
