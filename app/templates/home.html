@@ -19,7 +19,7 @@
         <div class="" id="colOne">
           <h2>Chat Rooms</h2>
           <hr>
-          <h3 ng-repeat="rooms in home.chatRooms"><span ng-click="home.changeRoom()">{{ rooms.name }}</span></h3>
+          <h3 ng-repeat="room in home.chatRooms"><span ng-click="home.changeRoom(room)">{{ room.name }}</span></h3>
         </div>
       </div>
       <div class="col-sm-8">
@@ -27,9 +27,9 @@
 
           <h2>Current Room: {{ home.currentRoom.name }}</h2>
           <hr>
-          <h4>User : {{home.currentRoom.username}}</h4>
+          <h4>User : {{}}</h4>
           <hr>
-          <h4>Message: "{{home.currentRoom.message}}"</h4>
+          <h4 ng-repeat="message in home.messages"> Message: "{{message.content}}"</h4>
         </div>
       </div>
     </div>

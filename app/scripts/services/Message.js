@@ -1,6 +1,6 @@
 (function() {
   function Message($firebaseArray) {
-              // makes an empty ojbect 
+              // makes an empty ojbect
     var Message = {};
             // var ref:  creates a refrence from the database made from the children of humans. j/k made from "Messages"
     var ref = firebase.database().ref().child("Messages");
