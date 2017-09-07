@@ -14,19 +14,14 @@
 
       this.changeRoom = function(room)   {
 
-          this.messages = Message.getByRoomId(room.$id);
-          
-          this.currentRoom = room;
-          console.log(this.getByRoomId);
+        this.messages = Message.getByRoomId(room.$id);
+        
+        this.currentRoom = room;
+
+          }
+
+
       }
-      this.alert = function() {
-        alert();
-      }
-
-
-
-    }
-
 
     angular
         .module('blocChat')

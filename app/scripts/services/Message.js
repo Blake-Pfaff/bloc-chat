@@ -10,7 +10,7 @@
     Message.getByRoomId = function(roomId) {
 
         ref.orderByChild('roomId').equalTo(roomId);
-
+        return ref.orderByChild('roomId').equalTo(roomId);
     };
 
     return Message;
