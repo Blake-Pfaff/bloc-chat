@@ -7,8 +7,8 @@
       // Trigger the modal window and assign it to a modal variable
       var modal = $uibModal.open({
         templateUrl: 'templates/modal.html',
-        controller: 'ModalInstanceCtrl',
-        controllerAs: 'modal'
+        controller: 'ModalInstanceAddRoomCtrl',
+        controllerAs: 'addRoomModal'
       });
 
 

@@ -3,15 +3,8 @@ body {
 }
 
 
- h1, h2, .modalH3, .inputDiv, .btnDiv, #colOne, #colTwo  {
+ h1, h2, p, .modalH3, .inputDiv, .btnDiv, #colOne, #colTwo  {
   text-align: center;
-}
-
-
-.divTest {
-  color: red;
-  display: flex;
-
 }
 
 #colOne {

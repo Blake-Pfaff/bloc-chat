@@ -1,6 +1,6 @@
 (function() {
 
-    function ModalInstanceCtrl($uibModalInstance) {
+    function ModalInstanceAddRoomCtrl($uibModalInstance) {
 
       this.roomName = '';
 
@@ -16,6 +16,6 @@
 
     angular
         .module('blocChat')
-        .controller('ModalInstanceCtrl', ['$uibModalInstance', ModalInstanceCtrl])
+        .controller('ModalInstanceAddRoomCtrl', ['$uibModalInstance', ModalInstanceAddRoomCtrl])
 
 })();
