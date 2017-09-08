@@ -20,16 +20,27 @@
 
               if (!currentUser || currentUser === '') {
 
-                $uibModal.open({
-                  templateUrl: 'templates/userModal.html',
-                  controller: 'ModalInstanceAddUserCtrl',
-                  controllerAs: 'addUser'
-                })
-                // ModalInstanceAddUserCtrl.result.then (
-                //   function (userName) {
-                //   var currentUser = $cookies.put('blocChatCurrentUser', username);
-                //   }
-                // );
+                this.open = function () {
+                  // Trigger the modal window and assign it to a modal variable
+                  var modal = $uibModal.open({
+                    templateUrl: 'templates/userModal.html',
+                    controller: 'ModalInstanceAddUserCtrl',
+                    controllerAs: 'addUser'
+                  });
+
+
+                  modal.result.then(
+                    // This is called when the modal is closed, i.e modal.close().
+                    function (result) {
+
+                      console.log('modal accepted and closed!', result);
+                    },
+                    // This is called when the modal is dismissed, i.e. modal.dismiss().
+                    function () {
+                      console.log('modal dismissed!');
+                    }
+                  );
+                };
               }
 
             }
