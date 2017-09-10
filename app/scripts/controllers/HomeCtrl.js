@@ -8,14 +8,14 @@
 
         this.currentRoom = this.chatRooms.$getRecord('-KtDNd_7Ph6y4sztODP-');
 
-        console.log(this.currentRoom);
+        // console.log(this.currentRoom);
       })
 
 
       this.changeRoom = function(room)   {
 
         this.messages = Message.getByRoomId(room.$id);
-        
+
         this.currentRoom = room;
 
           }
