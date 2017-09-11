@@ -25,7 +25,9 @@
                   var modal = $uibModal.open({
                     templateUrl: 'templates/userModal.html',
                     controller: 'ModalInstanceAddUserCtrl',
-                    controllerAs: 'addUser'
+                    controllerAs: 'addUser',
+                    keyboard: false,
+                    backdrop: 'static'
                   });
 
 
@@ -34,10 +36,6 @@
                     function (result) {
 
                       console.log('modal accepted and closed!' + result);
-                    },
-                    // This is called when the modal is dismissed, i.e. modal.dismiss().
-                    function () {
-                      console.log('modal dismissed!');
                     }
                   );
 

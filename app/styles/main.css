@@ -22,3 +22,15 @@ body {
   padding: 1.5rem;
 
 }
+
+.inputText, .messageInputBtn {
+  position: absolute;
+  bottom: 1px;
+  /*right: 20%;*/
+  /*margin-left: -50px;*/
+}
+
+#inputTextBox {
+  width: 400px;
+  height: 25px;
+}
