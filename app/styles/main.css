@@ -20,12 +20,20 @@ body {
   border: solid 2px black;
   height:500px;
   padding: 1.5rem;
+  position: relative;
 
 }
+.inputText {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 1px;
+}
 
-.inputText, .messageInputBtn {
+/*.inputText {
   position: absolute;
-  bottom: 1px;
+  bottom: 1px;*/
   /*right: 20%;*/
   /*margin-left: -50px;*/
 }
