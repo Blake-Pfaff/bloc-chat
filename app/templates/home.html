@@ -28,7 +28,8 @@
           <h2>Current Room: {{ home.currentRoom.name }}</h2>
           <hr>
 
-          <h4 ng-repeat="message in home.messages">User :  Message : "{{message.content}}"</h4>
+          <p ng-contorller="ModalInstanceAddUserCtrl as addUser"> {{ cookie.username }}</p>
+          <h4 ng-repeat="message in home.messages">Message : "{{message.content}}"</h4>
 
           <div class="input-group inputText">
 
@@ -36,7 +37,8 @@
 
             <span class="input-group-btn">
 
-              <button class="btn btn-default " type="button">Send</button>
+              <button class="btn btn-success" type="button">Send</button>
+
             </span>
 
           </div>

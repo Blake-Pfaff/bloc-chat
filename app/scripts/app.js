@@ -35,6 +35,8 @@
                     // This is called when the modal is closed, i.e modal.close().
                     function (result) {
 
+                      $cookies.put('blocChatCurrentUser', result);
+
                       console.log('modal accepted and closed!' + result);
                     }
                   );

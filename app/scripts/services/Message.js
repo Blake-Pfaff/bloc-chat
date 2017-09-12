@@ -1,5 +1,5 @@
 (function() {
-  function Message($firebaseArray) {
+  function Message($firebaseArray, $cookies) {
               // makes an empty ojbect
     var Message = {};
             // var ref:  creates a refrence from the database made from the children of humans. j/k made from "Messages"
@@ -19,5 +19,5 @@
 
   angular
     .module('blocChat')
-    .factory('Message', ['$firebaseArray', Message]);
+    .factory('Message', ['$firebaseArray', '$cookies', Message]);
 })();
