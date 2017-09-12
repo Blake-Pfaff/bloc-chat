@@ -28,7 +28,7 @@
           <h2>Current Room: {{ home.currentRoom.name }}</h2>
           <hr>
 
-          <p ng-contorller="ModalInstanceAddUserCtrl as addUser"> {{ cookie.username }}</p>
+          <p ng-controller="ModalInstanceAddUserCtrl as addUser"> {{ addUser.result }}</p>
           <h4 ng-repeat="message in home.messages">Message : "{{message.content}}"</h4>
 
           <div class="input-group inputText">
