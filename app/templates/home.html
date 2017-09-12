@@ -25,10 +25,10 @@
       <div class="col-sm-8">
         <div class="" id="colTwo">
 
-          <h2>Current Room: {{ home.currentRoom.name }}</h2>
+          <h2>Current Room: {{ userName }}</h2>
           <hr>
 
-          <p ng-controller="ModalInstanceAddUserCtrl as addUser"> {{ addUser.result }}</p>
+          <p> {{ addUser.result }}</p>
           <h4 ng-repeat="message in home.messages">Message : "{{message.content}}"</h4>
 
           <div class="input-group inputText">
