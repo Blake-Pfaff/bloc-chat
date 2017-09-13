@@ -11,9 +11,7 @@
         </section>
       </div>
     </div>
-
     <hr>
-
     <div class="row">
       <div class="col-sm-4">
         <div class="" id="colOne">
@@ -24,28 +22,17 @@
       </div>
       <div class="col-sm-8">
         <div class="" id="colTwo">
-
-          <h2>Current Room: {{ userName }}</h2>
+          <h2>Current Room: {{ home.currentRoom.name }}</h2>
           <hr>
-
-          <p> {{ addUser.result }}</p>
+          <p>User Name: {{ userName }}</p>
           <h4 ng-repeat="message in home.messages">Message : "{{message.content}}"</h4>
-
           <div class="input-group inputText">
-
-          <input placeholder="type message here" type="text" class="form-control">
-
+          <input id="message" ng-model="home.message" placeholder="type message here" type="text" class="form-control">
             <span class="input-group-btn">
-
-              <button class="btn btn-success" type="button">Send</button>
-
+              <button ng-click="home.send(message)" class="btn btn-success" type="button">Send</button>
             </span>
-
           </div>
-
         </div>
-
       </div>
     </div>
-
 </main>
