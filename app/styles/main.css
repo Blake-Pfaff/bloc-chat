@@ -3,7 +3,7 @@ body {
 }
 
 
- h1, h2, p, .modalH3, .inputDiv, .btnDiv, #colOne, #colTwo  {
+ h1, h2, .modalP, .modalH3, .inputDiv, .btnDiv  {
   text-align: center;
 }
 
