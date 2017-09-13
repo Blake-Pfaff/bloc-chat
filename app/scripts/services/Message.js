@@ -17,7 +17,7 @@
 
     Message.send = function(newMessage) {
       // $add is firebase code and takes an object as an argument
-      Messages.$add({ content: message, username: "TEST_NAME"  }).then(function(ref) {
+      messages.$add({ content: message, username: "TEST_NAME"  }).then(function(ref) {
       var id = ref.key;
       console.log("added record with id " + id);
       messages.$indexFor(id); // returns location in the array
