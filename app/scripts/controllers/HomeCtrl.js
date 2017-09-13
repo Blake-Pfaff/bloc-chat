@@ -4,7 +4,7 @@
 
       this.createRoom = Room.add;
 
-      this.username = $cookies.get('blocChatCurrentUser');
+      // this.username = $cookies.get('blocChatCurrentUser');
 
       this.chatRooms.$loaded().then(() => {
 
