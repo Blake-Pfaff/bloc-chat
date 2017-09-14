@@ -15,9 +15,9 @@
     };
 
 
-    Message.send = function(newMessage) {
+    Message.send = function(newMessage, room) {
       // $add is firebase code and takes an object as an argument
-      messages.$add({ content: newMessage, username: "TEST_NAME"  }).then(function(ref) {
+      messages.$add({ content: newMessage, username: $cookies.get('blocChatCurrentUser'), roomId: room }).then(function(ref) {
       var id = ref.key;
       console.log("added record with id " + id);
       messages.$indexFor(id); // returns location in the array

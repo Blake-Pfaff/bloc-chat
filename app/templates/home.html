@@ -24,8 +24,10 @@
         <div class="" id="colTwo">
           <h2>Current Room: {{ home.currentRoom.name }}</h2>
           <hr>
-          <p>User Name: {{ home.username }}</p>
-          <h4 ng-repeat="message in home.messages">Message : "{{home.message}}"</h4>
+          <div ng-repeat="message in home.messages">
+          <p >User Name: "{{ message.username }}"</p>
+          <h4 >Message : "{{message.content}}"</h4>
+          </div>
           <div class="input-group inputText">
           <input id="message" ng-model="home.message" placeholder="type message here" type="text" class="form-control">
             <span class="input-group-btn">

@@ -4,13 +4,13 @@
 
       this.createRoom = Room.add;
 
+
       // this.username = $cookies.get('blocChatCurrentUser');
 
       this.chatRooms.$loaded().then(() => {
 
-        this.currentRoom = this.chatRooms.$getRecord('-KtDNd_7Ph6y4sztODP-');
+          this.changeRoom(this.chatRooms.$getRecord('-KtDNd_7Ph6y4sztODP-'));
 
-        // console.log(this.currentRoom);
       })
 
 
@@ -23,7 +23,7 @@
         }
 
       this.send = function() {
-        Message.send(this.message);
+        Message.send(this.message, this.currentRoom.$id);
         this.message = " ";
       }
 

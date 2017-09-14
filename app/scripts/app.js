@@ -31,6 +31,7 @@
                   });
 
 
+
                   modal.result.then(
                     // This is called when the modal is closed, i.e modal.close().
                     function (result) {
